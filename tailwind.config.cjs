@@ -10,11 +10,11 @@ module.exports = {
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
         "gray-500": "#141452",
-        "primary-100": "#FFE1E0",
+        "primary-100": "#ebebfa",
         "primary-300": "#8585e0",
         "primary-500": "#3333cc",
         "secondary-400": "#FFCD5B",
-        "secondary-500": "#FFC132",
+        "secondary-500": "#d6d6f5",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":
