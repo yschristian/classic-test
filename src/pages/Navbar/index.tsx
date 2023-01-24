@@ -8,20 +8,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 type Props = {
     selectedPage: SelectedPage,
-    setSelectedPage: (value: SelectedPage) => void
+    setSelectedPage: (value: SelectedPage) => void,
+    isTopOfPage: boolean;
 }
 
 const Navbar = ({
     selectedPage,
-    setSelectedPage
+    setSelectedPage,
+    isTopOfPage
 }: Props) => {
     const flexBetween = "flex items-center justify-between"
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
+    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow"
 
     return (
         <nav>
-            <div className={`${flexBetween} fixed top-0 z-30 w-full py-6`}>
+            <div className={` ${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16 `}>
                         <img src={Logo} alt="logo" />
