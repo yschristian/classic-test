@@ -12,32 +12,32 @@ const Traffic: Array<RoadType> = [
   {
     id:1,
     title: "Igice cya 1",
-    img: roadsignn2
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, fugiat quo! Maiores possimus perferendis quasi pariatur sed ipsum, voluptate repellendus laudantium nesciunt magnam cupiditate ut enim sunt beatae vitae omnis officia atque quo, exercitationem error delectus corporis blanditiis ad voluptates. Doloribus maxime labore incidunt veniam repudiandae, necessitatibus consectetur itaque asperiores, reiciendis provident aliquam mollitia rerum natus tenetur temporibus consequuntur id veritatis aspernatur eos recusandae, in minus? Quisquam nesciunt eveniet esse sunt aut praesentium,"
   },
   {
     id:2,
     title: "Igice cya 2",
-    img: roadsignn2
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, fugiat quo! Maiores possimus perferendis quasi pariatur sed ipsum, voluptate repellendus laudantium nesciunt magnam cupiditate ut enim sunt beatae vitae omnis officia atque quo, exercitationem error delectus corporis blanditiis ad voluptates. Doloribus maxime labore incidunt veniam repudiandae, necessitatibus consectetur itaque asperiores, reiciendis provident aliquam mollitia rerum natus tenetur temporibus consequuntur id veritatis aspernatur eos recusandae, in minus? Quisquam nesciunt eveniet esse sunt aut praesentium,"
   },
   { 
     id:3,
     title: "Igice cya 3",
-    img: roadsignn2
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, fugiat quo! Maiores possimus perferendis quasi pariatur sed ipsum, voluptate repellendus laudantium nesciunt magnam cupiditate ut enim sunt beatae vitae omnis officia atque quo, exercitationem error delectus corporis blanditiis ad voluptates. Doloribus maxime labore incidunt veniam repudiandae, necessitatibus consectetur itaque asperiores, reiciendis provident aliquam mollitia rerum natus tenetur temporibus consequuntur id veritatis aspernatur eos recusandae, in minus? Quisquam nesciunt eveniet esse sunt aut praesentium,"
   },
   {
     id:4,
     title: "Igice cya 4",
-    img: roadsignn2
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, fugiat quo! Maiores possimus perferendis quasi pariatur sed ipsum, voluptate repellendus laudantium nesciunt magnam cupiditate ut enim sunt beatae vitae omnis officia atque quo, exercitationem error delectus corporis blanditiis ad voluptates. Doloribus maxime labore incidunt veniam repudiandae, necessitatibus consectetur itaque asperiores, reiciendis provident aliquam mollitia rerum natus tenetur temporibus consequuntur id veritatis aspernatur eos recusandae, in minus? Quisquam nesciunt eveniet esse sunt aut praesentium,"
   },
   {
     id:5,
     title: "igice cya 5",
-    img: roadsignn2
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, fugiat quo! Maiores possimus perferendis quasi pariatur sed ipsum, voluptate repellendus laudantium nesciunt magnam cupiditate ut enim sunt beatae vitae omnis officia atque quo, exercitationem error delectus corporis blanditiis ad voluptates. Doloribus maxime labore incidunt veniam repudiandae, necessitatibus consectetur itaque asperiores, reiciendis provident aliquam mollitia rerum natus tenetur temporibus consequuntur id veritatis aspernatur eos recusandae, in minus? Quisquam nesciunt eveniet esse sunt aut praesentium,"
   },
   {
     id:6,
     title: "igice cya 6",
-    img: roadsignn2
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, fugiat quo! Maiores possimus perferendis quasi pariatur sed ipsum, voluptate repellendus laudantium nesciunt magnam cupiditate ut enim sunt beatae vitae omnis officia atque quo, exercitationem error delectus corporis blanditiis ad voluptates. Doloribus maxime labore incidunt veniam repudiandae, necessitatibus consectetur itaque asperiores, reiciendis provident aliquam mollitia rerum natus tenetur temporibus consequuntur id veritatis aspernatur eos recusandae, in minus? Quisquam nesciunt eveniet esse sunt aut praesentium,"
   }
 ]
 const TrafficRules = ({ setSelectedPage }: Props) => {
@@ -59,7 +59,7 @@ const TrafficRules = ({ setSelectedPage }: Props) => {
               <TrafficRoad
                 key={item.id}
                 title={item.title}
-                img={item.img}
+                description={item.description}
                 setSelectedPage={setSelectedPage}
               />
             ))

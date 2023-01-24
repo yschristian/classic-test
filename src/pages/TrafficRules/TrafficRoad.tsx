@@ -6,19 +6,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 type Props = {
     title: string,
-    img: string,
-    setSelectedPage:(value:SelectedPage)=>void
+    description: string,
+    setSelectedPage: (value: SelectedPage) => void
 }
 
-const TrafficRoad = ({setSelectedPage, title, img }: Props) => {
+const TrafficRoad = ({ setSelectedPage, title, description }: Props) => {
     return (
         <div className='mt-5 rounded-md border-2 border-gray-100 px-5 py-6 text-center h-[380px] w-[450px]'>
             <h4 className="font-bold">{title}</h4>
-            <div className="mb-4 flex justify-center">
-                <div className=" p-4">
-                <img alt={`${img}`} src={img}/>
-                </div>
-            </div>
+                  <p className='p-3 mt-8 text-sm '>{description}</p>
             <AnchorLink
                 className="txt-sm font-bold text-primary-500 underline hover:text-secondary-500"
                 onClick={() => setSelectedPage(SelectedPage.ContactUs)}
