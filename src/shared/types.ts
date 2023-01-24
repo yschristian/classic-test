@@ -5,3 +5,8 @@ export enum SelectedPage{
     TrafficRules="trafficrules",
     ContactUs = "contactus"
 }
+export interface RoadType{
+    id:number,
+    title:string,
+    img: string
+}

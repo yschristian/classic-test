@@ -1,7 +1,9 @@
 import Navbar from "@/pages/Navbar"
 import { useState } from "react"
 import { SelectedPage } from "@/shared/types"
-import Home from "./pages/Home"
+import Home from "@/pages/Home"
+import RoadSigns from "@/pages/RoadSigns"
+import TrafficRules from "@/pages/TrafficRules"
 
 
 function App() {
@@ -15,6 +17,12 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home
+        setSelectedPage={setSelectedPage}
+      />
+      <RoadSigns
+        setSelectedPage={setSelectedPage}
+      />
+      <TrafficRules
         setSelectedPage={setSelectedPage}
       />
     </div>
