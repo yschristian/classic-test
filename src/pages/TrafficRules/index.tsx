@@ -44,7 +44,7 @@ const TrafficRules = ({ setSelectedPage }: Props) => {
   return (
     <section
       id="trafficrules"
-      className="mx-auto min-h-full w-5/6 py-20 bg"
+      className="mx-auto min-h-full w-5/6 py-20"
     >
       <div>
         <div className='md:my-5 md:w-3/5'>
@@ -53,7 +53,7 @@ const TrafficRules = ({ setSelectedPage }: Props) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, et corporis similique aliquid quaerat magni eius? Aut ea, placeat assumenda consectetur quo quis cum, quae facilis recusandae sint perferendis quam.
           </p>
         </div>
-        <div className='md:flex mt-5 items-center gap-8 flex-wrap'>
+        <div className='mt-5 items-center justify-between gap-8 md:flex-wrap md:flex '>
           {
             Traffic.map((item: RoadType) => (
               <TrafficRoad

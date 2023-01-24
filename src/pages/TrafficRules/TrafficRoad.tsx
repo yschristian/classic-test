@@ -12,7 +12,7 @@ type Props = {
 
 const TrafficRoad = ({ setSelectedPage, title, description }: Props) => {
     return (
-        <div className='mt-5 rounded-md border-2 border-gray-100 px-5 py-6 text-center h-[380px] w-[450px]'>
+        <div className='mt-5 rounded-md border-2 border-gray-100 px-5 py-6 text-center md:h-[380px] md:w-[450px]'>
             <h4 className="font-bold">{title}</h4>
                   <p className='p-3 mt-8 text-sm '>{description}</p>
             <AnchorLink
