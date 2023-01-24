@@ -8,5 +8,5 @@ export enum SelectedPage{
 export interface RoadType{
     id:number,
     title:string,
-    img: string
+    description: string
 }
