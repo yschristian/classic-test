@@ -44,9 +44,9 @@ const TrafficRules = ({ setSelectedPage }: Props) => {
   return (
     <section
       id="trafficrules"
-      className="mx-auto min-h-full w-5/6 py-20"
+      className=" bg-primary-100 mt-10"
     >
-      <div>
+      <div className='mx-auto min-h-full py-20 w-5/6'>
         <div className='md:my-5 md:w-3/5'>
           <HText>Traffic Rules.</HText>
           <p className='my-10 text-sm'>
