@@ -1,9 +1,10 @@
 import Navbar from "@/pages/Navbar"
-import { useState, useEffect} from "react"
+import { useState, useEffect } from "react"
 import { SelectedPage } from "@/shared/types"
 import Home from "@/pages/Home"
 import RoadSigns from "@/pages/RoadSigns"
 import TrafficRules from "@/pages/TrafficRules"
+import ContactUs from "@/pages/ContactUs"
 
 
 function App() {
@@ -11,12 +12,12 @@ function App() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
 
   useEffect(() => {
-    const handleScroll = async() =>{
-      if(window.scrollY === 0){
+    const handleScroll = async () => {
+      if (window.scrollY === 0) {
         setIsTopOfPage(true)
         setSelectedPage(SelectedPage.Home)
       }
-      if(window.scrollY !== 0){
+      if (window.scrollY !== 0) {
         setIsTopOfPage(false)
       }
     }
@@ -37,6 +38,9 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <TrafficRules
+        setSelectedPage={setSelectedPage}
+      />
+      <ContactUs
         setSelectedPage={setSelectedPage}
       />
     </div>
