@@ -5,6 +5,7 @@ import Home from "@/pages/Home"
 import RoadSigns from "@/pages/RoadSigns"
 import TrafficRules from "@/pages/TrafficRules"
 import ContactUs from "@/pages/ContactUs"
+import Footer from "@/pages/Footer"
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <ContactUs
         setSelectedPage={setSelectedPage}
       />
+      <Footer />
     </div>
   )
 }
